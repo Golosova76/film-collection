@@ -1,0 +1,75 @@
+@use "styles/mixins" as m;
+
+.film-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid var(--background-color);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.film-card__favorite-marker {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  pointer-events: none;
+}
+
+.film-card__link {
+  @include m.margin-bottom20;
+}
+
+.film-card__poster {
+  width: 100%;
+  aspect-ratio: 320 / 453;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  @include m.margin-bottom5;
+}
+
+.film-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-weight: var(--font-weight500);
+}
+
+.film-card__title {
+  text-transform: uppercase;
+  font-size: var(--font-size-h1);
+}
+
+.film-card__button {
+  padding: 5px 10px;
+  border: 2px solid var(--light-border);
+  border-radius: 8px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.film-card__button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover-bg);
+  border-color: var(--button-hover-bg);
+}
+
+.film-card__link:focus-visible,
+.film-card__button:focus-visible {
+  outline: 3px solid var(--card-hover-border);
+  outline-offset: 3px;
+}

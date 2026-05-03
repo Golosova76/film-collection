@@ -4,8 +4,8 @@
   }
 }
 
-@mixin margin-bottom30 {
+@mixin margin-bottom5 {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 }

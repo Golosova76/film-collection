@@ -4,6 +4,8 @@
 
 :root {
   --font-family: "Roboto";
+  --font-weight400: 400;
+  --font-weight500: 500;
   --font-size-base: 14px;
   --font-size-h1: 18px;
   --line-height: 1.4;
@@ -11,6 +13,13 @@
   --background-color: #5a5d68;
   --background-color-main: #fff;
   --text-color-main: #000;
+
+  --light-border: #696969;
+  --card-hover-border: #8a8d99;
+  --card-hover-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+  --button-hover-bg: #4b4e58;
+  --button-hover-text: #fff;
+  --background-color-icon: #ff0000;
 }
 
 body {

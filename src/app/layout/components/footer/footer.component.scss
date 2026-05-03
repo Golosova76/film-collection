@@ -1,6 +1,24 @@
+@use "styles/mixins" as m;
+
 .footer {
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: space-around;
+}
+
+.footer__item {
+}
+
+.footer__item {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.footer__item::after {
+  @include m.hover-line;
+}
+
+.footer__item:hover::after {
+  transform: scaleX(1);
 }

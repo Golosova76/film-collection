@@ -1,3 +1,17 @@
+@use "styles/mixins" as m;
+
 :host {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: var(--font-size-h1);
   padding: 20px;
+}
+
+p {
+  @include m.margin-bottom20;
 }

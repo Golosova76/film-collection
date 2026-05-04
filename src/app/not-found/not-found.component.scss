@@ -1,0 +1,63 @@
+.not-found-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  background-color: var(--background-color404);
+}
+
+.not-found-content {
+  padding: 3rem 2.5rem;
+  border-radius: 2rem;
+
+  text-align: center;
+
+  background-color: var(--background-color-main);
+  box-shadow: 0 8px 32px rgb(30 34 54 / 8%);
+}
+
+.not-found-title {
+  margin: 0;
+
+  font-size: 8rem;
+  font-weight: 900;
+  color: var(--color404);
+  letter-spacing: 0.2rem;
+}
+
+.not-found-subtitle {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text-color-main);
+}
+
+.not-found-message {
+  margin-bottom: 2.5rem;
+  color: var(--light-border);
+}
+
+.not-found-home-link {
+  cursor: pointer;
+
+  display: inline-block;
+
+  padding: 0.8rem 2.2rem;
+  border-radius: 1.5rem;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--background-color-main);
+  text-decoration: none;
+
+  background-color: var(--color404);
+  box-shadow: 0 2px 6px rgb(60 64 67 / 8%);
+
+  transition: background 0.18s;
+
+  &:hover,
+  &:focus {
+    background: var(--background-color404-hover);
+  }
+}

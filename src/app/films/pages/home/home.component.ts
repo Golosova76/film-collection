@@ -40,4 +40,8 @@ export class HomeComponent {
   protected readonly hasFilteredFilms = computed(() => {
     return this.filteredFilms().length > 0;
   });
+
+  public toggleFavorite(id: number): void {
+    this.filmService.toggleFavorite(id);
+  }
 }

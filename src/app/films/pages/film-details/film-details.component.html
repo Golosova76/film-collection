@@ -4,10 +4,16 @@
     <div class="details-content__meta">{{ selectedFilm.year }} · {{ selectedFilm.genre }}</div>
     <div class="details-content__rating">Rating: {{ selectedFilm.rating }}</div>
     <div class="details-content__duration">Duration: {{ selectedFilm.duration | durationFormat }}</div>
-    <div class="details-content__descriprion">
+    <div class="details-content__description">
       {{ selectedFilm.description }}
     </div>
-    <a routerLink="/" type="button" class="details-content__back">Васк Home</a>
+    <a routerLink="/" class="details-content__back">Васк Home</a>
   </div>
   <img [src]="selectedFilm.posterUrl" [alt]="selectedFilm.title" class="details-image" />
+} @else {
+  <div class="details-content">
+    <div class="details-content__title">Film not found</div>
+    <div class="details-content__description">The film you are looking for does not exist.</div>
+    <a routerLink="/" class="details-content__back">Back Home</a>
+  </div>
 }

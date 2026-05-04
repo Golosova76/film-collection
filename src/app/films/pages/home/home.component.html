@@ -9,16 +9,9 @@
 } @else if (hasFilteredFilms()) {
   <div class="film-cards-wrapper">
     @for (film of filteredFilms(); track film.id) {
-      <app-film-card [film]="film"></app-film-card>
+      <app-film-card [film]="film" (favoriteToggled)="toggleFavorite($event)"></app-film-card>
     }
   </div>
 } @else {
   <p class="nothing-found">Nothing found</p>
 }
-<!--
-<div class="film-cards-wrapper">
-  @for (film of films(); track film.id) {
-    <app-film-card [film]="film"></app-film-card>
-  }
-</div>
--->

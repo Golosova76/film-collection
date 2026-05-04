@@ -33,8 +33,8 @@ The project is organized into logical folders by responsibility:
 
 ```text
 src/
-  app/    
-    films/      
+  app/
+    films/
       components/
       directives/
       models/
@@ -44,8 +44,8 @@ src/
     layout/
       components/
       model/
-    not-found/             
-    app.routes.ts  
+    not-found/
+    app.routes.ts
 ```
 
 ## Mock Data
@@ -61,7 +61,6 @@ The application uses mock film data. Each film contains the following fields:
 - `description`
 - `posterUrl`
 - `isFavorite`
-
 
 ## Pages
 
@@ -186,4 +185,3 @@ The project meets the following requirements:
 - no RxJS for application state;
 - clean folder structure;
 - reusable logic extracted into services, directives, and pipes.
-

@@ -1,8 +1,32 @@
 .breadcrumbs__list {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 a {
+  color: var(--text-color-main);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: ">";
+  margin-left: 8px;
+  color: var(--text-color-main);
+}
+
+.breadcrumbs__link {
+  cursor: pointer;
+}
+
+.breadcrumbs__link:hover {
+  color: red;
+}
+
+.breadcrumbs__current {
   color: var(--text-color-main);
 }

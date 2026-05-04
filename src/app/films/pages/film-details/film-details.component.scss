@@ -27,6 +27,7 @@
 }
 
 .details-content__back {
+  display: flex;
   padding: 5px 10px;
   border: 2px solid var(--light-border);
   border-radius: 8px;

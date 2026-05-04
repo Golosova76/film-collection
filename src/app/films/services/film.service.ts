@@ -5,7 +5,7 @@ import { Film } from '../models/film.model';
   providedIn: 'root',
 })
 export class FilmService {
-  private readonly filmsUrl = '/assets/data/films.json';
+  private readonly filmsUrl = 'assets/data/films.json';
 
   private readonly filmsState = signal<Film[]>([]);
 

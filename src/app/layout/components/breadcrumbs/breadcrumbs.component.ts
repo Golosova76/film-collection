@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { BreadcrumbItem } from '../../model/breadcrumb.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-breadcrumbs',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './breadcrumbs.component.html',
   styleUrl: './breadcrumbs.component.scss',
 })
-export class BreadcrumbsComponent {}
+export class BreadcrumbsComponent {
+  public readonly breadcrumbs = input.required<BreadcrumbItem[]>();
+}

@@ -43,3 +43,10 @@
   color: var(--text-color-main);
   background-color: var(--background-color-main);
 }
+
+@media (max-width: 1050px) {
+  :host {
+    flex-direction: column;
+    width: 100%;
+  }
+}

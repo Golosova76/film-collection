@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { FilmService } from '../../services/film.service';
 import { RouterLink } from '@angular/router';
+import { DurationFormatPipe } from '../../pipes/duration-format.pipe';
 
 @Component({
   selector: 'app-film-details',
-  imports: [RouterLink],
+  imports: [RouterLink, DurationFormatPipe],
   templateUrl: './film-details.component.html',
   styleUrl: './film-details.component.scss',
 })

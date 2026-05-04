@@ -1,3 +1,11 @@
+@use "styles/mixins" as m;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 .film-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 320px));
@@ -5,4 +13,24 @@
   padding: 10px;
   justify-content: center;
   align-items: stretch;
+}
+
+.search-film {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include m.margin-bottom20;
+  border: 2px solid var(--background-color);
+  border-radius: 8px;
+  min-height: 40px;
+  width: 100%;
+  max-width: 360px;
+  padding: 5px;
+}
+
+.film-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
 }

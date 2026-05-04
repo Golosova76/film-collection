@@ -3,7 +3,7 @@
     <div class="details-content__title">{{ selectedFilm.title }}</div>
     <div class="details-content__meta">{{ selectedFilm.year }} · {{ selectedFilm.genre }}</div>
     <div class="details-content__rating">Rating: {{ selectedFilm.rating }}</div>
-    <div class="details-content__duration">Duration: {{ selectedFilm.duration }}</div>
+    <div class="details-content__duration">Duration: {{ selectedFilm.duration | durationFormat }}</div>
     <div class="details-content__descriprion">
       {{ selectedFilm.description }}
     </div>

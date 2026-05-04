@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Film } from '../../models/film.model';
 
 @Component({
   selector: 'app-film-details',

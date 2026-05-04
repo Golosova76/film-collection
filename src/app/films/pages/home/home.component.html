@@ -1,8 +1,6 @@
 <div class="film-cards-wrapper">
-  <!--
-  <app-film-card></app-film-card>
-  <app-film-card></app-film-card>
-  <app-film-card></app-film-card>
--->
-  <app-film-details></app-film-details>
+  @for (film of films(); track film.id) {
+    <app-film-card [film]="film"></app-film-card>
+  }
+  <!--<app-film-details></app-film-details>-->
 </div>

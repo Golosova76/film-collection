@@ -8,11 +8,11 @@
     </svg>
   </span>
   <a href="" class="film-card__link">
-    <img src="/assets/images/interstellar.jpg" alt="" class="film-card__poster" />
+    <img [src]="film().posterUrl" [alt]="film().title" class="film-card__poster" />
     <div class="film-card__content">
-      <div class="film-card__title">Interstellar</div>
-      <div class="film-card__meta">2014 · Sci-Fi</div>
-      <div class="film-card__rating">Rating: 8.6</div>
+      <div class="film-card__title">{{ film().title }}</div>
+      <div class="film-card__meta">{{ film().year }} · {{ film().genre }}i</div>
+      <div class="film-card__rating">Rating: {{ film().rating }}</div>
     </div>
   </a>
   <button type="button" class="film-card__button">Add to favorites</button>
